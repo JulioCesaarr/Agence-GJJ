@@ -1,0 +1,958 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Questrial', sans-serif;
+}
+
+body {
+    color: black;
+    background-color: #F0EAD6;
+}
+
+header {
+    background-color: #F2A66C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+
+header a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 20px;
+    transition: 0.3s;
+}
+
+header a:hover {
+    color: black;
+}
+
+h1, h2 {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+p {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+#quem-somos {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    line-height: 150%;
+    position: relative;
+}
+
+.text-box {
+    background-color: #F2A66C; /* Cor laranja do header */
+    padding: 10px; /* Ajuste o espaçamento interno conforme necessário */
+    border-radius: 10px; /* Borda arredondada para um visual mais bonito */
+    max-width: 280px;
+    border: black solid;
+}
+
+.text-box2 {
+    background-color: #FFBD59; /* Cor laranja do header */
+    padding: 10px; /* Ajuste o espaçamento interno conforme necessário */
+    border-radius: 10px; /* Borda arredondada para um visual mais bonito */
+    max-width: 280px;
+}
+
+.text-box3 {
+    background-color: #F2A66C; /* Cor laranja do header */
+    padding: 10px; /* Ajuste o espaçamento interno conforme necessário */
+    border-radius: 10px; /* Borda arredondada para um visual mais bonito */
+    max-width: 375px;
+    border: black solid;
+}
+
+.text-box4 {
+    background-color: #F2A66C; /* Cor laranja do header */
+    padding: 10px; /* Ajuste o espaçamento interno conforme necessário */
+    border-radius: 10px; ;/* Borda arredondada para um visual mais bonito */
+    border: black solid;
+}
+
+#quem-somos div p{
+   text-align: justify;
+   margin-right: 100px;
+   margin-top: 30px;
+
+   animation: flutuacao 7s ease-in-out infinite; 
+}
+
+@keyframes flutuacao {
+    0%, 100%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+}
+
+#quem-somos div h1 {
+    padding: 32px;
+}
+
+#porque {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 20px;  
+    line-height: 150%;
+    background-color: #FFBD59;
+    background: linear-gradient(to bottom, #F0EAD6, #FFBD59);
+}
+
+#porque h2 {
+    margin-left: 100px;
+}
+
+#porque div p {
+    text-align: justify;
+    margin-left: 100px;
+    margin-top: 30px;
+
+    animation: flutuacao 7s ease-in-out infinite; 
+}
+
+#mvv {
+    padding: 64px 80px;
+    text-align: center;
+    background-color: #FFBD59;
+}
+#mvv img {
+    margin: 64px auto;
+}
+
+#mvv div p {
+    text-align: center;
+    margin-left: 100px;
+    margin-top: 30px;
+    line-height: 150%;
+    animation: flutuacao 10s ease-in-out infinite; 
+}
+
+#mvv div h2 {
+    align-items: center;
+}
+
+.cards {
+    background-color: #487E7F;
+    text-align: center;
+}
+
+.cards h1 {
+    background: linear-gradient(to bottom, #FFBD59, #487E7F);
+    color: white;
+    padding: 50px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    color: #ffffff;
+    justify-content: space-between;
+    padding: 80px;
+}
+
+.card, .card2, .card3 {
+    background-image: linear-gradient(#3C7F72, #FFBD59);
+    align-items: center;
+    overflow: hidden;
+    border-radius: 16px;
+    justify-content: center;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card .img {
+    background-image: url(img/cards/1-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .6;
+    transition: all .5s;
+}
+
+.card:hover .img, .card2:hover .img2, .card3:hover .img3 {
+    opacity: 1;
+    width: 440px;
+}
+
+
+.card .img span, .card2 .img2 span, .card3 .img3 span {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.card2 .img2 {
+    background-image: url(img/cards/Design_sem_nome-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .6;
+    transition: all .5s;
+}
+
+.card3 .img3 {
+    background-image: url(img/cards/3-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+    width: 360px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .6;
+    transition: all .5s;
+}
+
+.card .content, .card2 .content2, .card3 .content3 {
+    padding: 0 20px;
+    text-align: left;
+    overflow: hidden;
+    height: 0;
+    transition: all .5s;
+    opacity: 0;
+}
+
+.card:hover .content {
+    padding: 20px;
+    height: 480px;
+    opacity: 1;
+}
+
+.card2:hover .content2 {
+    padding: 20px;
+    height: 320px;
+    opacity: 1;
+}
+
+.card3:hover .content3 {
+    padding: 20px;
+    height: 390px;
+    opacity: 1;
+}
+
+.card .content p, .card2 .content2 p, .card3 .content3 p {
+    margin-bottom: 0;
+}
+
+.card .content .desc, .card2 .content2 .desc, .card3 .content3 .desc {
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+.card .content .title, .card2 .content2 .title, .card3 .content3 .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.card .arrow, .card2 .arrow2, .card3 .arrow3{
+    padding: 15px;
+    font-size: 30px;
+    transform: rotate(-180deg);
+    transition: all .5s;
+}
+
+.card .arrow span {
+    font-size: 24px;
+}
+
+.card:hover .arrow, .card2:hover .arrow2, .card3:hover .arrow3 {
+    transform: rotate(0);
+}
+
+.duvidas {
+    position: relative;
+}
+
+#duvidas {
+    background: linear-gradient(#487E7F, #F0EAD6);
+    display: flex;
+    gap: 64px;
+    align-items: center;
+    padding: 64px 80px;
+    color: black;
+}
+
+#duvidas h2 {
+    margin-bottom: 32px;
+    color: #F0EAD6;
+}
+
+.duvida {
+    margin-bottom: 32px;
+}
+
+.duvida .titulo {
+    position: relative;
+}
+
+.duvidas .arrow {
+    position: absolute;
+    top: 46px;
+    right: 24px;
+    transform: rotate(0);
+}
+
+
+.duvida h3 {
+    border: 2px solid #f0ead6;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 24px;
+}
+
+
+.duvida .paragrafo {
+    border-bottom: 1px solid #f0ead6;
+    border-right: 1px solid #f0ead6;
+    border-left: 1px solid #f0ead6;
+    padding: 0px 24px;
+    border-radius: 0 0 8px 8px;
+    margin-top: -8px;
+    text-align: justify;
+    font-weight: 100;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    animation: flutuacao 7s ease-in-out infinite; 
+}
+
+.duvida.ativa .paragrafo {
+    height: fit-content;
+    opacity: 1;
+    padding: 24px;
+}
+
+footer {
+    background-color: wheat;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding: 50px 80px;
+}
+
+footer img, footer .titulo {
+    display: block;
+    font-weight: 600px;
+    margin-bottom: 24px;
+    text-align: justify;
+}
+
+footer nav a {
+    color: #263138;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 16px;
+    transition: 0.3s;
+}
+
+footer p {
+    margin-bottom: 16px;
+    max-width: 350px;
+}
+
+footer p a {
+    color: #263138;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer p a:hover {
+    color: #FFFFFF;
+}
+
+footer a:hover{
+    color: #FFFFFF;
+}
+
+.develop {
+    background-color: #263138;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 24px;
+}
+
+.develop a{
+    transition: 0.3s;
+    text-decoration: none;
+    color: #487E7F;
+}
+
+.develop a:hover {
+    color: #F0EAD6;
+}
+
+#contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f0ead6;
+}
+
+.contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #487E7F;
+    padding: 10px 45px;
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+#contato h2 {
+    color: #F0EAD6;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+form label {
+    color: #f0ead6;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+form input {
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+
+form input:focus {
+    border-radius: 16px;
+}
+
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+
+form textarea:focus{
+    border-radius: 16px;
+}
+
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #F0EAD6;
+    color: #f0ead6;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+
+form button:hover{
+    background: #f0ead6;
+    color: #263138;
+    border-radius: 16px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #263138;
+    flex-direction: column;
+}
+.text {
+    font-size: 45px;
+    color: #F0EAD6;
+    margin-bottom: 30px;
+}
+.para {
+    color: #f0ead6;
+    margin-bottom: 50px;
+}
+.btn {
+    padding: 15px 55px;
+    background: #487E7F;
+    text-decoration: none;
+    color: #263138;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+.btn:hover {
+    border-radius: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #quem-somos {
+        flex-direction: column;
+    }
+
+    #quem-somos div {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #quem-somos div h1 {
+        padding: 20px;
+    }
+
+    #porque {
+        flex-direction: column;
+    }
+
+    #porque h2 {
+        margin-left: 0;
+    }
+
+    #porque div p {
+        margin-left: 0;
+    }
+
+    #mvv {
+        padding: 40px;
+    }
+
+    #mvv div p {
+        margin-left: 0;
+    }
+
+    .cards h1 {
+        padding: 30px;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .card, .card2, .card3 {
+        max-width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 40px;
+        padding: 30px;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: 'Questrial', sans-serif;
+    }
+    
+    body {
+        color: black;
+        background-color: #F0EAD6;
+    }
+    
+    header {
+        background-color: #F2A66C;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    
+    header a {
+        font-weight: 600;
+        text-decoration: none;
+        color: #ffffff;
+        margin-right: 20px;
+        transition: 0.3s;
+    }
+    
+    header a:hover {
+        color: black;
+    }
+    
+    h1, h2 {
+        font-weight: 600;
+        font-size: 32px;
+    }
+    
+    p {
+        font-weight: 300;
+        font-size: 18px;
+    }
+    
+    #quem-somos {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        line-height: 150%;
+        position: relative;
+    }
+    
+    .text-box {
+        background-color: #F2A66C;
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 280px;
+        border: black solid;
+    }
+    
+    .text-box2 {
+        background-color: #FFBD59;
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 280px;
+    }
+    
+    .text-box3 {
+        background-color: #F2A66C;
+        padding: 10px;
+        border-radius: 10px;
+        max-width: 375px;
+        border: black solid;
+    }
+    
+    .text-box4 {
+        background-color: #F2A66C;
+        padding: 10px;
+        border-radius: 10px;
+        border: black solid;
+    }
+    
+    #quem-somos div p {
+        text-align: justify;
+        margin-right: 100px;
+        margin-top: 30px;
+        animation: flutuacao 7s ease-in-out infinite;
+    }
+    
+    @keyframes flutuacao {
+        0%, 100% {
+            transform: translateY(10px);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+    
+    #quem-somos div h1 {
+        padding: 32px;
+    }
+    
+    #porque {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        padding: 20px;
+        line-height: 150%;
+        background-color: #FFBD59;
+        background: linear-gradient(to bottom, #F0EAD6, #FFBD59);
+    }
+    
+    #porque h2 {
+        margin-left: 100px;
+    }
+    
+    #porque div p {
+        text-align: justify;
+        margin-left: 100px;
+        margin-top: 30px;
+        animation: flutuacao 7s ease-in-out infinite;
+    }
+    
+    #mvv {
+        padding: 64px 80px;
+        text-align: center;
+        background-color: #FFBD59;
+    }
+    
+    #mvv img {
+        margin: 64px auto;
+    }
+    
+    #mvv div p {
+        text-align: center;
+        margin-left: 100px;
+        margin-top: 30px;
+        line-height: 150%;
+        animation: flutuacao 10s ease-in-out infinite;
+    }
+    
+    #mvv div h2 {
+        align-items: center;
+    }
+    
+    .cards {
+        background-color: #487E7F;
+        text-align: center;
+    }
+    
+    .cards h1 {
+        background: linear-gradient(to bottom, #FFBD59, #487E7F);
+        color: white;
+        padding: 50px;
+    }
+    
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 80vh;
+        color: #ffffff;
+        justify-content: space-between;
+        padding: 80px;
+    }
+    
+    .card, .card2, .card3 {
+        background-image: linear-gradient(#3C7F72, #FFBD59);
+        align-items: center;
+        overflow: hidden;
+        border-radius: 16px;
+        justify-content: center;
+        max-width: 360px;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    
+    .card .img {
+        background-image: url(img/cards/1-removebg-preview.png);
+        background-position: center;
+        background-size: cover;
+        width: 360px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: .6;
+        transition: all .5s;
+    }
+    
+    .card:hover .img, .card2:hover .img2, .card3:hover .img3 {
+        opacity: 1;
+        width: 440px;
+    }
+    
+    .card .img span, .card2 .img2 span, .card3 .img3 span {
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 100;
+        text-transform: uppercase;
+    }
+    
+    .card2 .img2 {
+        background-image: url(img/cards/Design_sem_nome-removebg-preview.png);
+        background-position: center;
+        background-size: cover;
+        width: 360px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: .6;
+        transition: all .5s;
+    }
+    
+    .card3 .img3 {
+        background-image: url(img/cards/3-removebg-preview.png);
+        background-position: center;
+        background-size: cover;
+        width: 360px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: .6;
+        transition: all .5s;
+    }
+    
+    .card .content, .card2 .content2, .card3 .content3 {
+        padding: 0 20px;
+        text-align: left;
+        overflow: hidden;
+        height: 0;
+        transition: all .5s;
+        opacity: 0;
+    }
+    
+    .card:hover .content {
+        padding: 20px;
+        height: 220px;
+        opacity: 1;
+    }
+    
+    .card2:hover .content2 {
+        padding: 20px;
+        height: 220px;
+        opacity: 1;
+    }
+    
+    .card3:hover .content3 {
+        padding: 20px;
+        height: 220px;
+        opacity: 1;
+    }
+    
+    .card h2, .card2 h2, .card3 h2 {
+        margin-top: 10px;
+        font-size: 24px;
+    }
+    
+    .card p, .card2 p, .card3 p {
+        font-size: 16px;
+        margin-top: 10px;
+    }
+
+    #duvidas {
+        background: linear-gradient(#487E7F, #F0EAD6);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 64px 20px;
+        color: black;
+    }
+    
+    .duvida {
+        margin-bottom: 32px;
+        width: 100%;
+    }
+    
+    .duvida .titulo {
+        position: relative;
+    }
+    
+    .duvidas .arrow {
+        position: absolute;
+        top: 46px;
+        right: 24px;
+        transform: rotate(0);
+    }
+    
+    .duvida h3 {
+        border: 2px solid #f0ead6;
+        border-radius: 8px;
+        cursor: pointer;
+        padding: 24px;
+        margin-bottom: 16px;
+    }
+    
+    .duvida .paragrafo {
+        border-bottom: 1px solid #f0ead6;
+        border-right: 1px solid #f0ead6;
+        border-left: 1px solid #f0ead6;
+        padding: 0px 24px;
+        border-radius: 0 0 8px 8px;
+        text-align: justify;
+        font-weight: 100;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: 0.5s;
+        animation: flutuacao 7s ease-in-out infinite;
+    }
+    
+    .duvida.ativa .paragrafo {
+        height: fit-content;
+        opacity: 1;
+        padding: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header a {
+        margin-bottom: 10px;
+    }
+
+    #quem-somos, #porque, #mvv, .container {
+        padding: 20px;
+    }
+
+    #quem-somos div p, #porque div p, #mvv div p {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .cards {
+        padding: 20px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .card, .card2, .card3 {
+        margin-bottom: 20px;
+    }
+
+    .card .img, .card2 .img2, .card3 .img3 {
+        width: 100%;
+    }
+
+    .card .content, .card2 .content2, .card3 .content3 {
+        height: auto;
+    }
+
+    #duvidas {
+        padding: 64px 10px;
+    }
+
+    .duvida .titulo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .duvida .paragrafo {
+        padding: 0 10px;
+    }
+}
